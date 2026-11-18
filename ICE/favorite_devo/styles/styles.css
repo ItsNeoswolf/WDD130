@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  color: #001f3f;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #9aa8b3;
+  padding: 12px;
+}
+
+th {
+  background-color: #001f3f;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #edf2f5;
+}
+
+.devo-form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.devo-form h2 {
+  color: #001f3f;
+  text-align: center;
+}
+
+.devo-form fieldset {
+  border: 2px solid #9aa8b3;
+  padding: 24px;
+}
+
+.devo-form legend {
+  color: #001f3f;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.devo-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.devo-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #71808d;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.devo-form button {
+  display: block;
+  margin: 22px auto 0;
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #001f3f;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.devo-form button:hover {
+  background-color: #244f70;
+}
+
+@media (max-width: 600px) {
+  .content-box {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

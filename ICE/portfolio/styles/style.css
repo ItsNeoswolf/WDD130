@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f5;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #243b53;
+    color: white;
+    padding: 1rem;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #486581;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #d9b66f;
+}
+
+main {
+    min-height: 60vh;
+    padding: 1rem 0;
+}
+
+main > ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    list-style: none;
+    padding: 0;
+}
+
+main li {
+    background-color: white;
+    border-left: 3px solid #d9b66f;
+    margin: 0;
+    padding: 1rem;
+}
+
+main li p {
+    margin: 0.75rem 0 0;
+}
+
+main a {
+    color: #245b78;
+}
+
+main > ul a {
+    background-color: #486581;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 0.45rem 0.8rem;
+    text-decoration: none;
+}
+
+main > ul a:hover,
+main > ul a:focus-visible {
+    background-color: #243b53;
+    text-decoration: underline;
+}
+
+main img {
+    border: 3px solid white;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #c8c8c8;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #243b53;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 0.75rem 0;
+}
+
+input,
+textarea {
+    display: block;
+    max-width: 100%;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+button {
+    background-color: #486581;
+    border: 1px solid #243b53;
+    color: white;
+    cursor: pointer;
+    padding: 0.4rem 0.75rem;
+}
+
+button:hover,
+button:focus-visible {
+    background-color: #243b53;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    background-color: #5a3386;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Creepster", cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+main img {
+    content: url("../images/halloween_v2.gif");
+    display: block;
+    margin: 0 auto;
+    border: 10px solid rgb(199, 150, 14);
+}
+
+nav,
+footer {
+    font-family: "JetBrains Mono", monospace;
+}
+
+section {
+    text-align: center;
+}

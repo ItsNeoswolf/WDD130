@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Thomas S. Monson</td>
+              <td>Dare to Stand Alone</td>
+              <td>Conference Center, Salt Lake City, Utah</td>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <td>Richard C. Edgley</td>
+              <td>Behold the Man</td>
+              <td>Tabernacle, Salt Lake City, Utah</td>
+              <td>1999</td>
+            </tr>
+            <tr>
+              <td>Hugh B. Brown</td>
+              <td>God Is the Gardener (The Currant Bush)</td>
+              <td>Brigham Young University, Provo, Utah</td>
+              <td>1968</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form class="devo-form">
+          <h2>Add a Favorite Devotional</h2>
+          <fieldset>
+            <legend>Devotional details</legend>
+            <div class="form-grid">
+              <label for="speaker">Speaker
+                <input type="text" id="speaker" name="speaker" required>
+              </label>
+              <label for="title">Title
+                <input type="text" id="title" name="title" required>
+              </label>
+              <label for="location">Location
+                <input type="text" id="location" name="location" required>
+              </label>
+              <label for="year">Year
+                <input type="number" id="year" name="year" min="1900" max="2100" required>
+              </label>
+            </div>
+            <button type="submit">Add Devotional</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostle Spotlight</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            align-items: center;
+            background: #e9edef;
+            display: flex;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+            padding: 32px 16px;
+        }
+
+        .spotlight {
+            background-color: #06376d;
+            background-image: linear-gradient(90deg, rgb(0 24 58 / 12%), rgb(0 24 58 / 24%)),
+                url("images/christus.webp");
+            background-position: center;
+            background-size: cover;
+            border: 6px solid #111;
+            border-radius: 34px;
+            color: white;
+            max-width: 710px;
+            overflow: hidden;
+            padding: 14px 24px 28px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            font-size: clamp(1.25rem, 3vw, 1.8rem);
+            font-weight: 400;
+            margin: 0 0 12px;
+            text-shadow: 0 2px 5px #00152d;
+        }
+
+        h2 {
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            margin: 12px 0;
+        }
+
+        .leaders {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: clamp(12px, 3vw, 26px);
+        }
+
+        .leader,
+        .apostle {
+            aspect-ratio: 1;
+            border: 6px solid white;
+            border-radius: 50%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .leader {
+            width: clamp(76px, 15vw, 112px);
+        }
+
+        .leader:nth-child(2) {
+            width: clamp(88px, 17vw, 126px);
+        }
+
+        .apostles {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            justify-items: center;
+            margin: 0 auto;
+            max-width: 410px;
+            row-gap: clamp(12px, 2vw, 20px);
+        }
+
+        .apostle-card {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-width: 0;
+        }
+
+        .apostle {
+            width: clamp(58px, 11vw, 82px);
+            transition: border-color 180ms ease, transform 180ms ease;
+        }
+
+        .apostle-card figcaption {
+            color: white;
+            font-size: clamp(0.7rem, 2vw, 0.85rem);
+            font-weight: 700;
+            margin-top: 5px;
+            max-width: 100%;
+            opacity: 0;
+            text-shadow: 0 1px 4px #00152d;
+            transition: opacity 180ms ease;
+        }
+
+        .apostle-card:hover .apostle,
+        .apostle-card:focus-within .apostle {
+            border-color: #ffd166;
+            transform: scale(1.06);
+        }
+
+        .apostle-card:hover figcaption,
+        .apostle-card:focus-within figcaption {
+            opacity: 1;
+        }
+
+        .apostle:focus-visible {
+            outline: 3px solid #ffd166;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 420px) {
+            .spotlight {
+                background-position: 38% center;
+                padding: 16px 12px 22px;
+            }
+
+            .apostle {
+                border-width: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="spotlight">
+        <h1>First Presidency</h1>
+        <section class="leaders" aria-label="First Presidency">
+            <img class="leader" src="images/eyring.webp" alt="Henry B. Eyring">
+            <img class="leader" src="images/oaks.webp" alt="Dallin H. Oaks">
+            <img class="leader" src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+        </section>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+        <section class="apostles" aria-label="Quorum of the Twelve Apostles">
+            <figure class="apostle-card">
+                <img class="apostle" src="images/anderson.webp" alt="Neil L. Andersen" tabindex="0">
+                <figcaption>Neil L. Andersen</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/bednar.webp" alt="David A. Bednar" tabindex="0">
+                <figcaption>David A. Bednar</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/cook.webp" alt="Quentin L. Cook" tabindex="0">
+                <figcaption>Quentin L. Cook</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/christofferson.webp" alt="D. Todd Christofferson" tabindex="0">
+                <figcaption>D. Todd Christofferson</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/causse.webp" alt="Gérald Caussé" tabindex="0">
+                <figcaption>Gérald Caussé</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/gong.webp" alt="Gerrit W. Gong" tabindex="0">
+                <figcaption>Gerrit W. Gong</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/gilbert.webp" alt="Clark G. Gilbert" tabindex="0">
+                <figcaption>Clark G. Gilbert</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/kearon.webp" alt="Patrick Kearon" tabindex="0">
+                <figcaption>Patrick Kearon</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/rasband.webp" alt="Ronald A. Rasband" tabindex="0">
+                <figcaption>Ronald A. Rasband</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/renlund.webp" alt="Dale G. Renlund" tabindex="0">
+                <figcaption>Dale G. Renlund</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/stevenson.webp" alt="Gary E. Stevenson" tabindex="0">
+                <figcaption>Gary E. Stevenson</figcaption>
+            </figure>
+            <figure class="apostle-card">
+                <img class="apostle" src="images/soares.webp" alt="Ulisses Soares" tabindex="0">
+                <figcaption>Ulisses Soares</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
